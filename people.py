@@ -83,6 +83,13 @@ class Bettor(Player):
             print('\nThat is not a valid bet entry. Please enter a number less than your bankroll.')
             self.place_bet()
 
+    @property
+    def is_broke(self):
+        if self.bankroll <= 0:
+            return True
+        else:
+            return False
+
 
 def main():
     ethan = Bettor(name='Ethan', money=1000)
