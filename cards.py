@@ -38,7 +38,7 @@ class Deck:
 
     def show_all(self):
         for card in self.cards:
-            card.showfull()
+            card.showfull()                 #supposed to be card.showval()? Not seeing a showfull() method implemented?
 
     def shuffle(self):
         random.shuffle(self.cards)
