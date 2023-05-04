@@ -16,7 +16,7 @@ class Card:
             self.value = int(rank)
         elif rank in ['J', 'K', 'Q']:
             self.value = 10
-        elif rank == 'A':
+        elif rank == 'A':                                    #Ace should be 1 or 11? Implement option to have 1 or 11
             self.value = 11
 
     def __str__(self):
